@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 
-export default function NavBar (){
+export function NavBar (){
 
     return(
     <nav className="nav-bar">
@@ -12,13 +12,13 @@ export default function NavBar (){
         Home
       </NavLink>
     </li>
-    <li>
+    {/* <li>
       <NavLink
         className={({ isActive }) => (isActive ? "active" : null)}
         to="/films"> 
         PokemonPage
       </NavLink>
-    </li>
+    </li> */}
   </ul>
 </nav>
     );
